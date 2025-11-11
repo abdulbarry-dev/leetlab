@@ -1,6 +1,6 @@
 # Ignore Rust build artifacts
 /target/
-**/target/
+Cargo.lock
 
 # Rust compiled artifacts
 **/*.rlib
@@ -27,7 +27,27 @@
 **/.fingerprint
 **/.rustc_info.json
 
-# Editor / OS junk (optional)
+# Ignore everything in algorithms folder
+algorithms/*
+
+# But keep the solution files
+!algorithms/*.rs
+!algorithms/*.js
+!algorithms/*.ts
+!algorithms/*.py
+!algorithms/*.java
+!algorithms/*.cpp
+!algorithms/*.c
+!algorithms/*.go
+
+# Ignore everything in javascript folder
+javascript/*
+
+# But keep the solution files
+!javascript/*.js
+!javascript/*.ts
+
+# Editor / OS junk
 .vscode/
 .idea/
 *.swp
