@@ -1,0 +1,34 @@
+# Ignore Rust build artifacts
+/target/
+**/target/
+
+# Rust compiled artifacts
+**/*.rlib
+**/*.rmeta
+**/*.d
+**/*.o
+**/*.so
+**/*.dylib
+**/*.dll
+**/*.exe
+**/*.exe.stackdump
+**/*.a
+**/*.lib
+**/*.lo
+**/*.la
+**/*.obj
+**/*.pdb
+
+# Profiling outputs
+**/*.profraw
+**/*.profdata
+
+# Rust/Cargo metadata
+**/.fingerprint
+**/.rustc_info.json
+
+# Editor / OS junk (optional)
+.vscode/
+.idea/
+*.swp
+.DS_Store
